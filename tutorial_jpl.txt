@@ -1,0 +1,16 @@
+
+Configurar jpl7 e eclipse
+
+1) Criar variável de ambiente SWI_HOME_DIR no windows e colocar
+o valor C:\Program Files\swipl
+
+2) Editar variável path e colocar no final da string:
+
+%SWI_HOME_DIR%\bin;%SWI_HOME_DIR%\lib\jpl.jar
+
+Obs: Senão houver um ; no final da string antes de colocar
+o caminho acima, adicionar antes.
+
+3) No eclipse,na jre do projeto, vá em Build Path -> Configure
+Buid Path -> Libraries, selecione a jre e clique em Add External Jar.
+É só navegar até a pasta swipl\lib e selecionar o jpl.
